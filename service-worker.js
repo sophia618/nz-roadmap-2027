@@ -1,9 +1,10 @@
-const CACHE_NAME = "nz-travel-plan-2027-v58";
+const CACHE_NAME = "nz-travel-plan-2027-v59";
+const WEATHER_URL = new URL("./weather-data.json", self.location).href;
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./styles.css?v=58",
-  "./app.js?v=58",
+  "./styles.css?v=59",
+  "./app.js?v=59",
   "./manifest.webmanifest",
   "./assets/hero-aoraki.jpg",
   "./assets/city-auckland-devonport.jpg",
@@ -36,8 +37,18 @@ self.addEventListener("fetch", (event) => {
   const request = event.request;
   if (request.method !== "GET") return;
 
-  if (request.url.includes("api.open-meteo.com")) {
-    event.respondWith(fetch(request).catch(() => caches.match(request)));
+  if (request.url.startsWith(WEATHER_URL)) {
+    event.respondWith(
+      fetch(request, { cache: "no-store" })
+        .then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(WEATHER_URL, clone));
+          }
+          return response;
+        })
+        .catch(() => caches.match(WEATHER_URL))
+    );
     return;
   }
 

@@ -650,6 +650,7 @@ const weatherCities = [
 ];
 
 const weatherCacheKey = "nz2027:weather:v2";
+const weatherDataUrl = "weather-data.json";
 const checklistStorageKey = "nz2027:checklist:v1";
 const countdownTarget = Date.parse("2027-02-07T18:30:00+08:00");
 
@@ -837,50 +838,33 @@ async function loadWeather(force = false) {
   refresh.textContent = "更新中...";
 
   try {
-    const results = await Promise.all(
-      weatherCities.map(async (city) => {
-        const params = new URLSearchParams({
-          latitude: String(city.lat),
-          longitude: String(city.lon),
-          current: "temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code",
-          timezone: "auto",
-          forecast_days: "1"
-        });
-        const controller = new AbortController();
-        const timeout = setTimeout(() => controller.abort(), 9000);
-        try {
-          const response = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`, {
-            signal: controller.signal
-          });
-          if (!response.ok) throw new Error("Weather request failed");
-          const json = await response.json();
-          return {
-            id: city.id,
-            weather: {
-              time: json.current.time,
-              temp: json.current.temperature_2m,
-              apparent: json.current.apparent_temperature,
-              humidity: json.current.relative_humidity_2m,
-              wind: json.current.wind_speed_10m,
-              code: json.current.weather_code
-            }
-          };
-        } finally {
-          clearTimeout(timeout);
-        }
-      })
-    );
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 9000);
+    let json;
+    try {
+      const response = await fetch(`${weatherDataUrl}?updated=${Date.now()}`, {
+        cache: "no-store",
+        signal: controller.signal
+      });
+      if (!response.ok) throw new Error("Weather data request failed");
+      json = await response.json();
+    } finally {
+      clearTimeout(timeout);
+    }
 
-    const nextCache = {};
-    results.forEach(({ id, weather }) => {
-      if (Number.isFinite(weather.temp)) nextCache[id] = weather;
-    });
-    if (Object.keys(nextCache).length) {
-      saveWeatherCache(nextCache);
-      renderWeather(nextCache, false);
-    } else {
+    const locations = json?.locations && typeof json.locations === "object"
+      ? json.locations
+      : json;
+    const nextCache = Object.fromEntries(
+      weatherCities
+        .map((city) => [city.id, locations?.[city.id]])
+        .filter(([, weather]) => Number.isFinite(weather?.temp))
+    );
+    if (!Object.keys(nextCache).length) {
       throw new Error("No weather data");
     }
+    saveWeatherCache(nextCache);
+    renderWeather(nextCache, false);
   } catch {
     if (!hasCache) renderWeather({}, true);
   } finally {
@@ -992,7 +976,7 @@ function setupChecklist() {
 
 function registerServiceWorker() {
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-    navigator.serviceWorker.register("service-worker.js?v=58").catch(() => {
+    navigator.serviceWorker.register("service-worker.js?v=59").catch(() => {
       // The static page still works without service worker support.
     });
   }
