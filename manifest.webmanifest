@@ -1,0 +1,11 @@
+{
+  "name": "Aotearoa New Zealand | 2027 南岛之旅",
+  "short_name": "NZ 2027",
+  "description": "2027 新西兰南岛十一日旅行计划",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5ebdd",
+  "theme_color": "#16324f",
+  "lang": "zh-CN",
+  "icons": []
+}

@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.log
+.deploy-ssh/
+.github-token.txt
+.github-tools/device_state.json
+.gcm-home/
+.gcm-local/
+
+
