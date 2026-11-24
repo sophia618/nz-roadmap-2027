@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-11-24T08:18:15.992Z",
+  "source": "Open-Meteo",
+  "locations": {
+    "auckland": {
+      "time": "2026-11-24T21:15",
+      "temp": 18,
+      "apparent": 17.8,
+      "humidity": 79,
+      "wind": 11.5,
+      "code": 51
+    },
+    "christchurch": {
+      "time": "2026-11-24T21:15",
+      "temp": 17.6,
+      "apparent": 14.2,
+      "humidity": 48,
+      "wind": 17.2,
+      "code": 2
+    },
+    "kaikoura": {
+      "time": "2026-11-24T21:15",
+      "temp": 18.8,
+      "apparent": 20.5,
+      "humidity": 83,
+      "wind": 2.3,
+      "code": 3
+    },
+    "tekapo": {
+      "time": "2026-11-24T21:15",
+      "temp": 11.1,
+      "apparent": 8.6,
+      "humidity": 72,
+      "wind": 10.4,
+      "code": 3
+    },
+    "mtcook": {
+      "time": "2026-11-24T21:15",
+      "temp": 8.9,
+      "apparent": 5.9,
+      "humidity": 92,
+      "wind": 16.2,
+      "code": 3
+    },
+    "queenstown": {
+      "time": "2026-11-24T21:15",
+      "temp": 15.8,
+      "apparent": 15.6,
+      "humidity": 68,
+      "wind": 0.7,
+      "code": 3
+    },
+    "wanaka": {
+      "time": "2026-11-24T21:15",
+      "temp": 14,
+      "apparent": 13.4,
+      "humidity": 75,
+      "wind": 3.4,
+      "code": 3
+    },
+    "milford": {
+      "time": "2026-11-24T21:15",
+      "temp": 13.9,
+      "apparent": 12.1,
+      "humidity": 98,
+      "wind": 20.9,
+      "code": 63
+    }
+  }
+}
