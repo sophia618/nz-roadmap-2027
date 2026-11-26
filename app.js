@@ -388,8 +388,8 @@ const tripDays = [
       },
       {
         time: "18:00-19:00",
-        title: "蒂卡波晚餐",
-        copy: "在镇上吃正式晚餐，之后回酒店准备观星保暖衣物。"
+        title: "蒂卡波晚餐与次日午餐",
+        copy: "吃正式晚餐，并在 Four Square 或镇上提前买好 2/13 的午餐。Four Square 早上尚未营业，去库克山前也不容易买到食物。"
       },
       {
         time: "21:00 之后",
@@ -404,29 +404,29 @@ const tripDays = [
     weekday: "周六",
     title: "单程进库克山，走 Hooker Valley 并入住 Hermitage",
     city: "LAKE TEKAPO · AORAKI / MOUNT COOK",
-    summary: "乘 08:00 Tekapo Shuttle 单程进入库克山，寄存行李后走 Hooker Valley；晚上入住 Hermitage，不再返回蒂卡波。",
+    summary: "已确认 Tekapo Shuttle 单程：08:00 出发、09:30 到 Hermitage，两件大行李已包含；寄存后走 Hooker Valley，晚上入住 Hermitage。",
     stay: "Hermitage Lounge · 已预订",
     items: [
       {
         time: "07:00-07:30",
         title: "早餐、退房与整理行李",
-        copy: "从 Haka House 退房，两件大行李一起带走；和 Tekapo Shuttle 确认当天是单程进入库克山，并预留行李装载空间。"
+        copy: "从 Haka House 退房，两件大行李一起带走；带上前一晚准备好的午餐、饮用水和徒步用品。"
       },
       {
         time: "07:30-07:50",
-        title: "前往蒂卡波集合点",
-        copy: "带齐大件行李到 Tekapo Shuttle 集合点，再次核对下车点、行李规则和前往步道口的接驳。"
+        title: "前往 Four Square 集合与 check-in",
+        copy: "提前 10 分钟到 Tekapo Four Square 超市停车场或旁边公共停车区完成 check-in；司机在此集合。"
       },
       {
-        time: "08:00-09:20",
-        title: "Tekapo Shuttle：蒂卡波 → 库克山（单程）",
-        copy: "沿普卡基湖进入库克山国家公园。大件行李随车；如 Shuttle 只能送到 Hermitage，提前确认去 White Horse Hill 的接驳。",
+        time: "08:00-09:30",
+        title: "Tekapo Shuttle：蒂卡波 → 库克山（已确认）",
+        copy: "2 人单程票，2 件大行李已计入。车上提供水、小食、Wi-Fi、充电、登山杖和积雪时使用的防滑套；午餐不含。",
         links: [{ label: "Tekapo Shuttle", query: "Tekapo Shuttle Lake Tekapo Mount Cook" }]
       },
       {
-        time: "09:20-09:50",
-        title: "Hermitage 寄存行李",
-        copy: "先到 Hermitage 寄存两件大行李并确认晚上入住信息；贵重物品和徒步所需物品随身。"
+        time: "09:30-09:50",
+        title: "抵达 Hermitage 并寄存行李",
+        copy: "在 Hermitage Hotel 巴士停车区下车，寄存两件大行李并确认晚上入住信息；贵重物品和午餐随身。"
       },
       {
         time: "09:50-10:10",
@@ -978,7 +978,7 @@ function setupChecklist() {
 
 function registerServiceWorker() {
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-    navigator.serviceWorker.register("service-worker.js?v=60").catch(() => {
+    navigator.serviceWorker.register("service-worker.js?v=61").catch(() => {
       // The static page still works without service worker support.
     });
   }

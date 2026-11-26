@@ -21,9 +21,9 @@
 
 酒店品牌按官方酒店目录核对。截至 2026-11-18，[万豪新西兰酒店目录](https://www.marriott.com/en-us/hotel-sitemap/new-zealand-hotel-sitemap)仅列出奥克兰的 JW Marriott Auckland 和 Four Points by Sheraton Auckland；皇后镇暂无万豪系酒店。
 
-已确认住宿：`Haka House Lake Tekapo` 2/12 一晚，CAD 630.53 已付款；需确认此订单是否也包含 2/13，若包含则取消并核对退款。新增已预订 `Hermitage Lounge` 2/13 一晚、2/14 退房。
+已确认住宿：`Haka House Lake Tekapo` 2/12 一晚，CAD 630.53 已付款，2/13 退房；已预订 `Hermitage Lounge` 2/13 一晚、2/14 退房。
 
-库克山：2/13 乘 Tekapo Shuttle 单程进入库克山，走 Hooker Valley 后入住 Hermitage Lounge。2/14 约 07:25 去库克山机场；优先包车在活动结束后经蒂卡波前往基督城，GL72 作为备选。
+库克山：2/13 Tekapo Shuttle 已确认，08:00 从 Four Square 出发，09:30 到 Hermitage Hotel 巴士停车区；2 人及 2 件大行李已包含。车上提供水、小食、Wi-Fi、充电、登山杖和积雪时使用的防滑套，午餐不含。抵达后走 Hooker Valley，入住 Hermitage Lounge。2/14 约 07:25 去库克山机场；优先包车在活动结束后经蒂卡波前往基督城，GL72 作为备选。
 
 2/10 瓦纳卡计划：去程 `InterCity 08:10-09:56`，NZD 80，不可退；回程 `SkyDrive 16:15-17:40`。SkyDrive 可在发车前 1 小时修改预订。两家为分开承运，需分别购票。行程以 Lakefront / Station Park / That Wanaka Tree / 湖景午餐 / 皮划艇或湖边休息 / Ardmore St 购物为主，不安排 Lismore Park 上坡线。
 
