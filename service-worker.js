@@ -1,10 +1,10 @@
-const CACHE_NAME = "nz-travel-plan-2027-v59";
+const CACHE_NAME = "nz-travel-plan-2027-v60";
 const WEATHER_URL = new URL("./weather-data.json", self.location).href;
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./styles.css?v=59",
-  "./app.js?v=59",
+  "./styles.css?v=60",
+  "./app.js?v=60",
   "./manifest.webmanifest",
   "./assets/hero-aoraki.jpg",
   "./assets/city-auckland-devonport.jpg",

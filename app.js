@@ -394,7 +394,7 @@ const tripDays = [
       {
         time: "21:00 之后",
         title: "早点休息",
-        copy: "2/12 常规晚间观星已满，也不参加 2/13 凌晨场；保留体力给 08:00 Tekapo Shuttle 和 Hooker Valley。观星改在 2/13 晚间另排。"
+        copy: "2/12 常规晚间观星已满，也不参加 2/13 凌晨场；保留体力给 08:00 Tekapo Shuttle 和 Hooker Valley。观星改在 2/13 库克山安排。"
       }
     ]
   },
@@ -402,31 +402,36 @@ const tripDays = [
     date: "2/13",
     day: "D7",
     weekday: "周六",
-    title: "Tekapo Shuttle 当天往返，走 Hooker Valley",
+    title: "单程进库克山，走 Hooker Valley 并入住 Hermitage",
     city: "LAKE TEKAPO · AORAKI / MOUNT COOK",
-    summary: "乘 08:00 Tekapo Shuttle 当天往返库克山，走 Hooker Valley；15:00 返回蒂卡波续住，晚上可参加 Crater 英文观星。",
-    stay: "Haka House Lake Tekapo · 2/13 续住待确认 / 蒂卡波其他酒店",
+    summary: "乘 08:00 Tekapo Shuttle 单程进入库克山，寄存行李后走 Hooker Valley；晚上入住 Hermitage，不再返回蒂卡波。",
+    stay: "Hermitage Lounge · 已预订",
     items: [
       {
         time: "07:00-07:30",
-        title: "早餐",
-        copy: "在 Haka House 吃完早餐，大件行李继续寄存在酒店；当天只带小背包。"
+        title: "早餐、退房与整理行李",
+        copy: "从 Haka House 退房，两件大行李一起带走；和 Tekapo Shuttle 确认当天是单程进入库克山，并预留行李装载空间。"
       },
       {
         time: "07:30-07:50",
         title: "前往蒂卡波集合点",
-        copy: "前往 Tekapo Shuttle 集合点，确认当天为往返行程，15:00 从库克山返回蒂卡波。"
+        copy: "带齐大件行李到 Tekapo Shuttle 集合点，再次核对下车点、行李规则和前往步道口的接驳。"
       },
       {
         time: "08:00-09:20",
-        title: "Tekapo Shuttle：蒂卡波 → 库克山",
-        copy: "沿普卡基湖进入库克山国家公园，途中会安排观景点短停。",
+        title: "Tekapo Shuttle：蒂卡波 → 库克山（单程）",
+        copy: "沿普卡基湖进入库克山国家公园。大件行李随车；如 Shuttle 只能送到 Hermitage，提前确认去 White Horse Hill 的接驳。",
         links: [{ label: "Tekapo Shuttle", query: "Tekapo Shuttle Lake Tekapo Mount Cook" }]
+      },
+      {
+        time: "09:20-09:50",
+        title: "Hermitage 寄存行李",
+        copy: "先到 Hermitage 寄存两件大行李并确认晚上入住信息；贵重物品和徒步所需物品随身。"
       },
       {
         time: "09:50-10:10",
         title: "前往 White Horse Hill",
-        copy: "从 Hermitage 前往 White Horse Hill。提前与 Tekapo Shuttle 确认送往步道口的时间。"
+        copy: "从 Hermitage 前往 White Horse Hill；优先确认酒店接驳车或已预约车辆，避免临时找不到交通。"
       },
       {
         time: "10:10-13:30",
@@ -437,36 +442,22 @@ const tripDays = [
       {
         time: "13:30-14:30",
         title: "库克山午餐",
-        copy: "在 Hermitage 吃午餐并换干爽衣物，14:45 前回到 Tekapo Shuttle 集合点。"
+        copy: "在 Hermitage 吃午餐并换干爽衣物，下午不再赶回蒂卡波。"
       },
       {
-        time: "15:00-16:20",
-        title: "Tekapo Shuttle：库克山 → 蒂卡波",
-        copy: "返回蒂卡波后回酒店取行李并办理续住；若 Haka House 2/13 无房，则转住蒂卡波其他酒店。"
+        time: "14:30-17:30",
+        title: "Hermitage 入住与休息",
+        copy: "办理 Hermitage Lounge 入住，整理冰川徒步装备；若房间尚未准备好，先把行李寄存在前台。"
       },
       {
-        time: "17:45-19:00",
-        title: "蒂卡波晚餐",
-        copy: "吃完晚餐后回酒店休息，为晚上可选的观星和第二天早起保留体力。"
+        time: "18:00-19:00",
+        title: "库克山晚餐",
+        copy: "在 Hermitage 附近吃晚餐，早点休息并为第二天 08:25 的直升机 check-in 保留体力。"
       },
       {
-        time: "22:30-23:45",
-        title: "Dark Sky 观星：Crater 优先",
-        copy: "按本次日期，Crater 22:30 英文场有可订时段；Summit 2/13 只剩凌晨 00:45 / 02:00 一带，接 08:00 Shuttle 太累。",
-        bullets: [
-          {
-            name: "Crater Experience｜更适合这次",
-            detail: "优点：同样位于国际暗夜保护区内，NZD 139、75 分钟、离基地仅 5 分钟车程、含接驳、14 英寸望远镜、对体力要求低；缺点：不在约翰山山顶，没有专业天文台穹顶，深度略弱"
-          },
-          {
-            name: "Summit Experience｜体验更强但不建议这次",
-            detail: "优点：位于国际暗夜保护区核心的约翰山山顶，同时可进入专业天文台并使用 16 英寸望远镜；1 小时 45 分、含极寒外套，仪式感最强；缺点：NZD 239、需要少量暗夜上坡、2/13 只剩凌晨场，会明显压缩睡眠"
-          }
-        ],
-        links: [
-          { label: "Crater 余位", url: "https://book.darkskyproject.co.nz/activity/selection?filter=prodgroup-DSPCRAT&workingDate=2027-02-13" },
-          { label: "Summit 介绍", url: "https://www.darkskyproject.co.nz/experiences/the-summit-experience/" }
-        ]
+        time: "21:00 之后",
+        title: "库克山夜间观星",
+        copy: "向 Hermitage 确认当晚 Big Sky Stargazing 是否开放；若没有合适团，天气好时可在酒店周边安全区域自由观星。"
       }
     ]
   },
@@ -474,23 +465,23 @@ const tripDays = [
     date: "2/14",
     day: "D8",
     weekday: "周日",
-    title: "The Adventurer 冰川直升机徒步，下午到基督城",
+    title: "The Adventurer 冰川直升机徒步，包车直达基督城",
     city: "AORAKI / MOUNT COOK · CHRISTCHURCH",
-    summary: "06:20 从蒂卡波包车去库克山机场，08:25 前办理 The Adventurer check-in；14:00 乘 GL72，约 19:00 到基督城。",
+    summary: "从 Hermitage 短途前往库克山机场，08:25 前办理 check-in；活动结束后优先包车经蒂卡波去基督城，GL72 作为备选。",
     stay: "住宿待选 · 基督城",
     items: [
       {
-        time: "05:45-06:15",
+        time: "07:00-07:25",
         title: "早餐、退房与整理装备",
         copy: "穿 3-4 层保暖衣物，带墨镜、手套、相机、饮用水和少量零食；退房时两件大行李箱一起带走。"
       },
       {
-        time: "06:20-07:55",
-        title: "包车：蒂卡波 → 库克山机场",
-        copy: "提前预约能保管两件大行李的包车，约 1 小时 30 分直达 Aoraki Mt Cook Airport；行李留在车上，活动结束后再送往 Hermitage。"
+        time: "07:25-07:50",
+        title: "预约车：Hermitage → 库克山机场",
+        copy: "约 15-25 分钟直达 Aoraki Mt Cook Airport；确认车辆能放两件大行李，并在活动期间继续保管。"
       },
       {
-        time: "07:55-08:25",
+        time: "07:50-08:25",
         title: "机场 check-in",
         copy: "08:25 前完成 The Adventurer check-in；贵重物品随身，大件行李继续由包车保管。"
       },
@@ -501,25 +492,36 @@ const tripDays = [
         links: [{ label: "The Adventurer", url: "https://www.mtcookguides.co.nz/experiences/the-adventurer/" }]
       },
       {
-        time: "11:45-12:10",
-        title: "机场 → Hermitage",
-        copy: "飞行结束后由包车直接送到 Hermitage，大件行李随车。若活动因天气延迟，立即联系 GL72 或准备继续包车。"
+        time: "11:45-12:15",
+        title: "活动结束与换装",
+        copy: "在机场取回行李、换装和上洗手间；若活动因天气延迟，立即联系司机调整后续时间。"
       },
       {
-        time: "12:10-13:30",
-        title: "Hermitage 午餐与候车",
-        copy: "在 Hermitage 午餐；如果活动提前结束，可以先在酒店休息。13:40 前到 Aoraki Lobby 候车。"
+        time: "12:15-13:25",
+        title: "包车：库克山机场 → 蒂卡波",
+        copy: "优先让司机直接送往基督城，途中在蒂卡波短暂停留；这样不需要回酒店取行李，行李从早上起一直在车上。"
+      },
+      {
+        time: "13:25-13:55",
+        title: "蒂卡波午餐与休息",
+        copy: "在镇上快速吃午餐；若包车尚未确认到基督城，则 13:40 前返回 Hermitage 的 Aoraki Lobby 候车。"
+      },
+      {
+        time: "13:55-17:15",
+        title: "包车：蒂卡波 → 基督城（优先）",
+        copy: "约 3 小时直达基督城酒店。司机需提前确认固定总价、机场等待费和两件大行李空间。",
+        links: [{ label: "基督城", query: "Christchurch New Zealand" }]
       },
       {
         time: "14:00-19:00",
-        title: "GL72：库克山 → 基督城",
-        copy: "New Zealand Rail / GreatSights 观光巴士，提供酒店送达。沿途经过普卡基湖、蒂卡波和坎特伯雷平原。",
+        title: "备选：GL72 库克山 → 基督城",
+        copy: "如包车未确认，乘 GL72 观光巴士，提供酒店送达。沿途经过普卡基湖、蒂卡波和坎特伯雷平原。",
         links: [{ label: "GL72 班次", query: "Mount Cook to Christchurch GL72" }]
       },
       {
-        time: "19:00-20:00",
+        time: "17:15-18:00",
         title: "入住基督城",
-        copy: "巴士在 Bus Interchange 附近落客，也可确认酒店送达。办理入住后不要安排需要长途移动的晚餐。"
+        copy: "包车直接送到酒店；若乘 GL72，则在 Bus Interchange 附近落客或确认酒店送达。"
       }
     ]
   },
@@ -976,7 +978,7 @@ function setupChecklist() {
 
 function registerServiceWorker() {
   if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-    navigator.serviceWorker.register("service-worker.js?v=59").catch(() => {
+    navigator.serviceWorker.register("service-worker.js?v=60").catch(() => {
       // The static page still works without service worker support.
     });
   }
