@@ -1,70 +1,70 @@
 {
-  "generated_at": "2026-11-27T10:52:06.038Z",
+  "generated_at": "2026-11-28T02:42:01.291Z",
   "source": "Open-Meteo",
   "locations": {
     "auckland": {
-      "time": "2026-11-27T23:45",
-      "temp": 15.7,
-      "apparent": 15.1,
-      "humidity": 79,
-      "wind": 8.4,
+      "time": "2026-11-28T15:30",
+      "temp": 21.1,
+      "apparent": 21.8,
+      "humidity": 56,
+      "wind": 11.8,
       "code": 0
     },
     "christchurch": {
-      "time": "2026-11-27T23:45",
-      "temp": 11,
-      "apparent": 9.2,
-      "humidity": 74,
-      "wind": 6.4,
-      "code": 0
+      "time": "2026-11-28T15:30",
+      "temp": 17.2,
+      "apparent": 15.8,
+      "humidity": 55,
+      "wind": 17.7,
+      "code": 1
     },
     "kaikoura": {
-      "time": "2026-11-27T23:45",
-      "temp": 11.5,
-      "apparent": 11.1,
-      "humidity": 86,
-      "wind": 2.1,
+      "time": "2026-11-28T15:30",
+      "temp": 17.9,
+      "apparent": 18.3,
+      "humidity": 72,
+      "wind": 14.6,
       "code": 0
     },
     "tekapo": {
-      "time": "2026-11-27T23:45",
-      "temp": 8.3,
-      "apparent": 7.1,
-      "humidity": 94,
-      "wind": 3.2,
+      "time": "2026-11-28T15:30",
+      "temp": 18.5,
+      "apparent": 19.3,
+      "humidity": 59,
+      "wind": 6.5,
       "code": 2
     },
     "mtcook": {
-      "time": "2026-11-27T23:45",
-      "temp": 7.5,
-      "apparent": 6.6,
-      "humidity": 99,
-      "wind": 1.7,
-      "code": 45
+      "time": "2026-11-28T15:30",
+      "temp": 15.7,
+      "apparent": 16.1,
+      "humidity": 76,
+      "wind": 12.4,
+      "code": 2
     },
     "queenstown": {
-      "time": "2026-11-27T23:45",
-      "temp": 13.4,
-      "apparent": 13.1,
-      "humidity": 77,
-      "wind": 0.8,
-      "code": 0
+      "time": "2026-11-28T15:30",
+      "temp": 20.6,
+      "apparent": 21.4,
+      "humidity": 52,
+      "wind": 3.1,
+      "code": 3
     },
     "wanaka": {
-      "time": "2026-11-27T23:45",
-      "temp": 15.4,
-      "apparent": 15,
-      "humidity": 68,
-      "wind": 1.9,
-      "code": 0
+      "time": "2026-11-28T15:30",
+      "temp": 21.3,
+      "apparent": 22.8,
+      "humidity": 53,
+      "wind": 1.7,
+      "code": 2
     },
     "milford": {
-      "time": "2026-11-27T23:45",
-      "temp": 11.6,
-      "apparent": 11.5,
-      "humidity": 93,
-      "wind": 2.2,
-      "code": 0
+      "time": "2026-11-28T15:30",
+      "temp": 18.5,
+      "apparent": 20.5,
+      "humidity": 72,
+      "wind": 8.8,
+      "code": 2
     }
   }
 }
